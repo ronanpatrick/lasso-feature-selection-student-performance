@@ -1,11 +1,11 @@
 # Student Performance: Feature Selection (Lasso Regression) 
 
-> **Project Objective:** To identify the most significant demographic and academic predictors of student success using Lasso Regression, and to evaluate the performance trade-offs between a high-dimensional complex model and a simple baseline model.
+> **Objective:** To identify the most significant demographic and academic predictors of student success using Lasso Regression, and to evaluate the performance trade-offs between a high-dimensional complex model and a simple baseline model.
 
-## Project Overview
+## Overview
 This repository contains a regression analysis focusing on **Feature Selection**. Using a dataset of secondary school student performance, the project implements `LassoCV` to penalize and eliminate non-contributing variables from a large pool of socio-economic and behavioral features. 
 
-The core insight of this study demonstrates that while Lasso successfully identified statistically significant factors (like maternal education and absences), a simple baseline model relying strictly on past academic performance (G1 and G2 grades) ultimately achieved a lower RMSE and higher $R^2$ score. This highlights the vital data science principle of model parsimony: more features do not inherently yield better predictive power.
+The core insight of this study demonstrates that while Lasso successfully identified statistically significant factors (like maternal education and absences), a simple baseline model relying strictly on past academic performance (G1 and G2 grades) ultimately achieved a lower RMSE and higher R² score. This highlights the vital data science principle of model parsimony: more features do not inherently yield better predictive power.
 
 **A full summary of the correlation analysis, selected features, and model performance metrics is available in the included PDF Analysis Report.**
 
@@ -15,7 +15,7 @@ The core insight of this study demonstrates that while Lasso successfully identi
 * **Features Analysed:** 30+ socio-economic, demographic, and academic variables (e.g., `Medu`, `absences`, `failures`, `G1`, `G2`).
 
 ## Repository Structure
-* **`Feature_Selection_Analysis_Report.pdf`**: The formal documentation detailing the EDA, the features selected by the Lasso algorithm, and the final RMSE/$R^2$ comparisons.
+* **`Feature_Selection_Analysis_Report.pdf`**: The formal documentation detailing the EDA, the features selected by the Lasso algorithm, and the final RMSE/R² comparisons.
 * **`Feature_Selection_Lasso_Regression.ipynb`**: The core Jupyter Notebook containing the data preprocessing (`pd.get_dummies`), correlation heatmaps, Lasso implementation, and baseline model training.
 * **`student-mat-converted.csv`**: The dataset used for training and evaluation.
 
